@@ -71,7 +71,7 @@ email obrigatório
     Alerta Login senha    Senha obrigatória
 
 Campos obrigatórios
-    [Tags]    campos_obg
+    [Tags]    campos_obrigatório
 
     ${user}    Create Dictionary    email=${EMPTY}    password=${EMPTY}
 
