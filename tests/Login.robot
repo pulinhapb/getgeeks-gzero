@@ -1,5 +1,5 @@
 *Settings*
-Documentation    Login test suite
+Documentation    Login test suite do LOGIN
 
 Resource    ${EXECDIR}/resources/Base.robot
 
@@ -78,5 +78,5 @@ Campos obrigatórios
     Go To Login Page
     #Fill Credentials      ${user}
     Submit Credentials
-    Alerta Login email  E-mail obrigatório 
+    Alerta Login email    E-mail obrigatório 
     Alerta Login senha    Senha obrigatória
