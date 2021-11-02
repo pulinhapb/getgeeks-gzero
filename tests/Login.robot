@@ -58,7 +58,7 @@ email obrigatório
     Go To Login Page
     Fill Credentials      ${user}
     Submit Credentials
-    Alerta Login          E-mail obrigatório 
+   Alerta Login email          E-mail obrigatório 
 
 senha obrigatório
     [Tags]    senha_obg
@@ -78,5 +78,5 @@ Campos obrigatórios
     Go To Login Page
     #Fill Credentials      ${user}
     Submit Credentials
-    Alerta Login email      E-mail obrigatório 
-    Alerta Login senha      Senha obrigatória
+    Alerta Login email  E-mail obrigatório 
+    Alerta Login senha    Senha obrigatória
