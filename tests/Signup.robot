@@ -72,8 +72,8 @@ Signup With Short Pass
     [Arguments]         ${short_pass}
 
     ${user}     Create Dictionary
-    ...         name=Fernando               lastname=Papito
-    ...         email=papito@hotmail.com    password=${short_pass}
+    ...         name=Paula               lastname=Onofre
+    ...         email=paulinha.jampa@gmail.com    password=${short_pass}
 
     Go To Signup Form
     Fill Signup Form   ${user}
