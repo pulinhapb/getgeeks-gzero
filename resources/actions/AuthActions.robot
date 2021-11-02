@@ -13,7 +13,7 @@ Go To Login Page
 
 Fill Credentials
     [Arguments]         ${user}
-
+    Clear Text          ${INPUT_EMAIL}        
     Fill Text           ${INPUT_EMAIL}        ${user}[email]
     Fill Text           ${INPUT_PASS}         ${user}[password]
 
