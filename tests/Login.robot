@@ -8,7 +8,7 @@ Test Teardown    Finish Session
 
 *Test Cases*
 User login
-
+     [Tags]    novo
     ${user}    Factory User Login
 
     Go To Login Page
@@ -29,7 +29,7 @@ Incorrect Pass
 User not found
     [Tags]    user_404
 
-    ${user}    Create Dictionary    email=papito@404.com    password=abc123
+    ${user}    Create Dictionary     email=paulinha.jampa@gmail.com    password=kkk123
 
     Go To Login Page
     Fill Credentials           ${user}
@@ -39,7 +39,7 @@ User not found
 Incorret Email
     [Tags]    inv_email
 
-    ${user}    Create Dictionary    email=papito.com.br    password=abc123
+    ${user}    Create Dictionary    email=paulinha.com.br    password=abc123
 
     Go To Login Page
     Fill Credentials        ${user}
@@ -60,8 +60,8 @@ email obrigatório
     Submit Credentials
     Alerta Login          E-mail obrigatório 
 
-email obrigatório
-    [Tags]    email_obg
+senha obrigatório
+    [Tags]    senha_obg
 
     ${user}    Create Dictionary    email=paulinha.jampa@gmail.com    password=${EMPTY}
 
@@ -71,12 +71,12 @@ email obrigatório
     Alerta Login senha    Senha obrigatória
 
 Campos obrigatórios
-    [Tags]    campos_obrigatório
+    [Tags]    campos_obg
 
     ${user}    Create Dictionary    email=${EMPTY}    password=${EMPTY}
 
     Go To Login Page
-    Fill Credentials      ${user}
+    #Fill Credentials      ${user}
     Submit Credentials
-    Alerta Login          E-mail obrigatório 
-    Alerta Login senha    Senha obrigatória
+    Alerta Login email      E-mail obrigatório 
+    Alerta Login senha      Senha obrigatória
